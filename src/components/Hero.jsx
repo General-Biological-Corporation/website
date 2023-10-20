@@ -7,11 +7,10 @@ const Container = styled.div`
   height: 100vh;
   width: 100%;
   display: flex;
-  background-image: url('bridge.png');
+  background-image: url('images/bridge.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
 `;
 
 export const Hero = () => {

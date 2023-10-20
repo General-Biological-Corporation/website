@@ -1,6 +1,6 @@
 import { palette } from './palette';
 
 export const Root = {
-  backgroundColor: palette.grey,
+  backgroundColor: palette.white,
   color: palette.white
 };
