@@ -144,6 +144,9 @@ const CssReset = css`
   * {
     box-sizing: border-box;
   }
+  ::selection {
+    background: ${({ theme }) => theme.palette.gold};
+  }
 `;
 
 export const GlobalStyle = createGlobalStyle`
