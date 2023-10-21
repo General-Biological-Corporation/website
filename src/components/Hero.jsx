@@ -54,16 +54,22 @@ const Body = styled.div`
   }
 `;
 
-export const Hero = () => {
+export const Hero = ({ scrollTo }) => {
   return (
     <Container>
       <Content>
         <Navbar>
           <Icons.logo width={90} height={90} />
           <NavButtons>
-            <Text type="display-h2">About</Text>
-            <Text type="display-h2">Technology</Text>
-            <Text type="display-h2">Contact Us</Text>
+            <Text type="display-h2" onClick={() => scrollTo('about')}>
+              About
+            </Text>
+            <Text type="display-h2" onClick={() => scrollTo('technology')}>
+              Technology
+            </Text>
+            <a href="mailto:info@generalbiological.com">
+              <Text type="display-h2">Contact Us</Text>
+            </a>
           </NavButtons>
         </Navbar>
         <Body>

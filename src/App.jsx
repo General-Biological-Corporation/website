@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { Element, scroller } from 'react-scroll';
 import styled, { ThemeProvider } from 'styled-components';
 
 import { About } from './components/About';
@@ -18,15 +19,32 @@ const Container = styled.div`
 `;
 
 const App = () => {
+  const [scroll, setScroll] = useState('');
+
+  useEffect(() => {
+    if (scroll) {
+      scroller.scrollTo(scroll, {
+        smooth: true,
+        duration: 500,
+        offset: -10
+      });
+      setScroll('');
+    }
+  }, [scroll]);
+
   return (
     <ThemeProvider theme={base}>
       <GlobalStyle />
       <Container>
-        <Hero />
-        <About />
-        <Technology />
+        <Hero scrollTo={(name) => setScroll(name)} />
+        <Element name="about">
+          <About />
+        </Element>
+        <Element name="technology">
+          <Technology />
+        </Element>
         <Industries />
-        <Footer />
+        <Footer scrollTo={(name) => setScroll(name)} />
       </Container>
     </ThemeProvider>
   );

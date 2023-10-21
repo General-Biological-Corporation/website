@@ -29,7 +29,7 @@ const Nav = styled(Column)`
   }
 `;
 
-export const Footer = () => {
+export const Footer = ({ scrollTo }) => {
   return (
     <Container>
       <Branding>
@@ -40,9 +40,15 @@ export const Footer = () => {
         <Text type="display-h2" weight={700}>
           Navigate
         </Text>
-        <Text type="display-h4">About</Text>
-        <Text type="display-h4">Technology</Text>
-        <Text type="display-h4">Contact Us</Text>
+        <Text type="display-h4" onClick={() => scrollTo('about')}>
+          About
+        </Text>
+        <Text type="display-h4" onClick={() => scrollTo('technology')}>
+          Technology
+        </Text>
+        <a href="mailto:info@generalbiological.com">
+          <Text type="display-h4">Contact Us</Text>
+        </a>
       </Nav>
     </Container>
   );
