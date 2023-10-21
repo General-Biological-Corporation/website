@@ -2,6 +2,7 @@ import React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 
 import { About } from './components/About';
+import { Footer } from './components/Footer';
 import { Hero } from './components/Hero';
 import { Industries } from './components/Industries';
 import { Technology } from './components/Technology';
@@ -25,6 +26,7 @@ const App = () => {
         <About />
         <Technology />
         <Industries />
+        <Footer />
       </Container>
     </ThemeProvider>
   );
