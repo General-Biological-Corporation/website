@@ -3,6 +3,7 @@ import styled, { ThemeProvider } from 'styled-components';
 
 import { About } from './components/About';
 import { Hero } from './components/Hero';
+import { Industries } from './components/Industries';
 import { Technology } from './components/Technology';
 import { base, GlobalStyle } from './ui';
 
@@ -23,6 +24,7 @@ const App = () => {
         <Hero />
         <About />
         <Technology />
+        <Industries />
       </Container>
     </ThemeProvider>
   );
