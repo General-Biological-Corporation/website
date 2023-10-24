@@ -10,6 +10,10 @@ const Container = styled(SectionContainer)`
   background-position: center;
   background-repeat: no-repeat;
   padding: 120px 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+    padding: 50px 0;
+  }
 `;
 
 const Content = styled(SectionContent)`

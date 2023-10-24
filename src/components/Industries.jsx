@@ -31,6 +31,10 @@ const Container = styled(SectionContainer)`
   // linear gradient from left to right
   background: ${({ theme }) =>
     `linear-gradient(90deg, ${theme.palette.lightGrey}, ${theme.palette.darkGrey})`};
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+    padding: 50px 0;
+  }
 `;
 
 const Content = styled(SectionContent)`

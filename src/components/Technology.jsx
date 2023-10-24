@@ -40,6 +40,10 @@ const Container = styled.div`
   > ${Text} {
     margin-bottom: 65px;
   }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+    padding: 50px 12px;
+  }
 `;
 
 const Tiles = styled.div`
@@ -101,7 +105,6 @@ const Tile = styled.div`
     padding: 30px 20px 20px 20px;
     width: 100%;
     max-width: 350px;
-    margin: 0 12px 0 12px;
     margin-top: 0;
     margin-bottom: 0;
     box-sizing: border-box;

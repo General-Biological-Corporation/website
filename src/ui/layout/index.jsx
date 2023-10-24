@@ -25,4 +25,9 @@ export const SectionContent = styled.div`
   max-width: 1144px;
   padding-left: 50px;
   padding-right: 50px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 `;

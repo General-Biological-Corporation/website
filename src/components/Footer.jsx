@@ -12,11 +12,31 @@ const Content = styled(SectionContent)`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+    justify-content: flex-start;
+    > :last-child {
+      display: none;
+    }
+  }
 `;
 
 const Branding = styled(Column)`
+  align-items: flex-start;
   > :not(:first-child) {
     margin-top: 25px;
+  }
+
+  svg {
+    width: 340px;
+    height: 90px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+    svg {
+      width: 220px;
+      height: 60px;
+    }
   }
 `;
 
@@ -38,8 +58,8 @@ export const Footer = ({ scrollTo }) => {
     <Container>
       <Content>
         <Branding>
-          <Icons.logoCombined width={340} height={90} />
-          <Text type="text-t2">General Biological Corporation 2023</Text>
+          <Icons.logoCombined />
+          <Text type="text-t3">General Biological Corporation 2023</Text>
         </Branding>
         <Nav>
           <Text type="display-h2" weight={700}>
