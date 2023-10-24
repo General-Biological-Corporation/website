@@ -6,6 +6,10 @@ import { Column, Icons, SectionContainer, SectionContent, Text } from '../ui';
 const Container = styled(SectionContainer)`
   background-color: ${({ theme }) => theme.palette.brown};
   padding: 80px 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+    padding: 50px 0;
+  }
 `;
 
 const Content = styled(SectionContent)`
