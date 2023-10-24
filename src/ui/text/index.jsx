@@ -4,9 +4,13 @@ import styled from 'styled-components';
 import { useDimensions } from '../../hooks/useDimensions';
 
 const TextStyle = styled.div`
-  ${({ textStyle, isMobile, theme }) =>
+  ${({ textStyle, isMobile, isTablet, theme }) =>
     textStyle
-      ? `font: ${theme.textStyles[isMobile ? 'mobile' : 'desktop'][textStyle]};`
+      ? `font: ${
+          theme.textStyles[
+            isMobile ? 'mobile' : isTablet ? 'tablet' : 'desktop'
+          ][textStyle]
+        };`
       : ''}
   margin: 0;
   padding: 0;
@@ -20,10 +24,15 @@ const TextStyle = styled.div`
 `;
 
 export const _Text = ({ type, children, ...rest }) => {
-  const { isMobile } = useDimensions();
+  const { isMobile, isTablet } = useDimensions();
 
   return (
-    <TextStyle textStyle={type} isMobile={isMobile} {...rest}>
+    <TextStyle
+      textStyle={type}
+      isMobile={isMobile}
+      isTablet={isTablet}
+      {...rest}
+    >
       {children}
     </TextStyle>
   );

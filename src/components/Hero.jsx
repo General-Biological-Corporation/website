@@ -1,24 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Icons, Row, Text } from '../ui';
+import { Icons, Row, SectionContainer, SectionContent, Text } from '../ui';
 
-const Container = styled.div`
+const Container = styled(SectionContainer)`
   height: 100vh;
-  width: 100%;
-  display: flex;
+  padding: 50px 0;
   background-image: url('images/bridge.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 `;
 
-const Content = styled.div`
-  margin: auto;
-  width: 100%;
-  max-width: 1144px;
+const Content = styled(SectionContent)`
   height: 100%;
-  padding: 50px 0;
   display: flex;
   flex-direction: column;
 `;

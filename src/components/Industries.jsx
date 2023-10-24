@@ -5,7 +5,7 @@ import BuildingMaterials from '../images/building_materials.png';
 import Electronics from '../images/electronics.png';
 import PerformanceMaterials from '../images/performance_materials.png';
 import Water from '../images/water.png';
-import { Text } from '../ui';
+import { SectionContainer, SectionContent, Text } from '../ui';
 
 const data = [
   {
@@ -26,12 +26,14 @@ const data = [
   }
 ];
 
-const Container = styled.div`
-  padding: 120px 180px;
+const Container = styled(SectionContainer)`
+  padding: 120px 0;
   // linear gradient from left to right
   background: ${({ theme }) =>
     `linear-gradient(90deg, ${theme.palette.lightGrey}, ${theme.palette.darkGrey})`};
+`;
 
+const Content = styled(SectionContent)`
   > ${Text} {
     color: ${({ theme }) => theme.palette.black};
     margin-bottom: 35px;
@@ -42,6 +44,14 @@ const Tiles = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 18px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const Tile = styled.div`
@@ -69,12 +79,14 @@ const Tile = styled.div`
 export const Industries = () => {
   return (
     <Container>
-      <Text type="display-h1">Serving Key Industries</Text>
-      <Tiles>
-        {data.map(({ photo, title }, index) => (
-          <Industry key={index} photo={photo} index={index} title={title} />
-        ))}
-      </Tiles>
+      <Content>
+        <Text type="display-h1">Serving Key Industries</Text>
+        <Tiles>
+          {data.map(({ photo, title }, index) => (
+            <Industry key={index} photo={photo} index={index} title={title} />
+          ))}
+        </Tiles>
+      </Content>
     </Container>
   );
 };

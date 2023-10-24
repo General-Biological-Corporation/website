@@ -1,25 +1,28 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
-export const MOBILE_BREAKPOINT = 768;
+import { breakpoints } from '../ui';
 
 export const useDimensions = () => {
   const [dimensions, setDimensions] = useState({
     width: window.innerWidth,
-    height: window.innerHeight,
+    height: window.innerHeight
   });
   useEffect(() => {
     const handleResize = () => {
       setDimensions({
         width: window.innerWidth,
-        height: window.innerHeight,
+        height: window.innerHeight
       });
     };
 
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
   return {
     ...dimensions,
-    isMobile: dimensions.width < MOBILE_BREAKPOINT,
+    isMobile: dimensions.width < breakpoints.mobile,
+    isTablet:
+      dimensions.width < breakpoints.tablet &&
+      dimensions.width >= breakpoints.mobile
   };
 };

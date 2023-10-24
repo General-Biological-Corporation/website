@@ -49,6 +49,21 @@ const Tiles = styled.div`
   > :not(:last-child) {
     margin-right: 50px;
   }
+
+  @media (max-width: 1200px) {
+    > :not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+    flex-direction: column;
+
+    > :not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 50px;
+    }
+  }
 `;
 
 const Tile = styled.div`
@@ -76,6 +91,21 @@ const Tile = styled.div`
   }
 
   ${({ top }) => `margin-${top ? 'bottom' : 'top'}: 65px;`}
+
+  @media (max-width: 1200px) {
+    padding: 30px 20px 20px 20px;
+    width: 240px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+    padding: 30px 20px 20px 20px;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 12px 0 12px;
+    margin-top: 0;
+    margin-bottom: 0;
+    box-sizing: border-box;
+  }
 `;
 
 export const Technology = () => {
