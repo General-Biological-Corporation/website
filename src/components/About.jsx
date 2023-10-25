@@ -40,8 +40,7 @@ export const About = () => {
         </Text>
         <Text type="text-t1" weight={400}>
           The multi-trillion dollar chemicals industry underlies every aspect of
-          // eslint-disable-next-line react/no-unescaped-entities
-          the modern industrial economy. It's built on toxic processes, rotting
+          the modern industrial economy. It is built on toxic processes, rotting
           infrastructure, and a need for oil.
         </Text>
 
