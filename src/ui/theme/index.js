@@ -44,8 +44,6 @@ const CssReset = css`
   small,
   strike,
   strong,
-  sub,
-  sup,
   tt,
   var,
   center,

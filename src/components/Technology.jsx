@@ -14,8 +14,14 @@ const data = [
   {
     icon: <Icons.chemistry width={118} />,
     title: 'SUGAR,\n NOT OIL',
-    description:
-      'Traditional petrochemistry loses up to half of input carbon (from oil) as CO2. We engineer state-of-the-art enzymes to convert renewable carbon (from sugar) and fix CO2 directly, resulting in high yields, low costs, and zero emissions.'
+    description: (
+      <>
+        Traditional petrochemistry loses up to half of input carbon (from oil)
+        as CO<sub>2</sub>. We engineer state-of-the-art enzymes to convert
+        renewable carbon (from sugar) and fix CO<sub>2</sub> directly, resulting
+        in high yields, low costs, and zero emissions.
+      </>
+    )
   },
   {
     icon: <Icons.chart width={115} />,
