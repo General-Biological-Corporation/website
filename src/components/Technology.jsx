@@ -9,14 +9,14 @@ const data = [
     icon: <Icons.cycle width={115} />,
     title: 'CONTINUOUS MANUFACTURING',
     description:
-      'Traditional bioproduction runs in massive infrastructure with significant downtime. Our whole-cell catalyst technology never stops, sustaining molecule generation at rates 10x the competition.'
+      'Current bioproduction runs in massive infrastructure with significant downtime. Our whole-cell catalyst technology never stops, sustaining molecule generation at rates 10x the competition.'
   },
   {
     icon: <Icons.chemistry width={118} />,
     title: 'SUGAR,\n NOT OIL',
     description: (
       <>
-        Traditional petrochemistry loses up to half of input carbon (from oil)
+        Petrochemistry loses up to half of input carbon (from oil)
         as CO<sub>2</sub>. We engineer state-of-the-art enzymes to convert
         renewable carbon (from sugar) and fix CO<sub>2</sub> directly, resulting
         in high yields, low costs, and zero emissions.
@@ -27,7 +27,7 @@ const data = [
     icon: <Icons.chart width={115} />,
     title: 'SUPERCHARGED SCALING',
     description:
-      'Traditional bioproduction takes years and enormous fixed costs to meet demand. Our in-house fabricated bioreactors take new molecules to industrial volumes on a serious budget within months, not decades.'
+      'Bioproduction has historically taken years and enormous fixed costs to meet demand. Our in-house fabricated bioreactors take new molecules to industrial volumes in months, not decades.'
   }
 ];
 

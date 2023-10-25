@@ -167,7 +167,7 @@ export const Hero = ({ scrollTo }) => {
         <Body>
           <Icons.logoWords />
           <Text type="display-h2" weight={500}>
-            Rethinking the chemical and material economy to secure our industry,
+            Reimagining the chemical and material economy to secure our industry,
             our country, and our planet.
           </Text>
         </Body>

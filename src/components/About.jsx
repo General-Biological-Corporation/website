@@ -31,18 +31,19 @@ export const About = () => {
     <Container>
       <Content>
         <Text type="display-h1">Who We Are</Text>
-        <Text type="text-t1" weight={400}>
-          The multi-trillion dollar chemicals industry underlies every aspect of
-          the modern industrial economy but is built on toxic process, rotting
-          infrastructure, and a need for oil.
-        </Text>
         <Text type="text-t1" weight={700}>
-          General Biological is changing that by{' '}
+          General Biological is developing technologies to {' '}
           <Highlight>
-            catalyzing a shift from industrial chemistry to industrial biology
+            catalyze a shift from traditional chemical manufacturing to sustainable bioproduction.
           </Highlight>
           .
         </Text>
+        <Text type="text-t1" weight={400}>
+          The multi-trillion dollar chemicals industry underlies every aspect of
+          the modern industrial economy. It's built on toxic processes, rotting
+          infrastructure, and a need for oil.
+        </Text>
+
       </Content>
     </Container>
   );
