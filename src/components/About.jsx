@@ -36,7 +36,7 @@ export const About = () => {
           <Highlight>
             catalyze a shift from traditional chemical manufacturing to sustainable bioproduction.
           </Highlight>
-          .
+          
         </Text>
         <Text type="text-t1" weight={400}>
           The multi-trillion dollar chemicals industry underlies every aspect of
