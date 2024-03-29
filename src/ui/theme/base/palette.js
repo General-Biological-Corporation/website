@@ -2,6 +2,7 @@ export const palette = {
   white: '#ffffff',
   black: '#1e1e1e',
   orange: '#f37100',
+  lightGold: '#FFC27A',
   gold: '#FF9315',
   brown: '#46423D',
   lightGrey: '#d9d9d9',

@@ -49,7 +49,7 @@ const NavButtons = styled(Row)`
   > * {
     cursor: pointer;
     transition: color 0.2s ease-in-out;
-
+    filter: brightness(1.15);
     &:hover {
       color: ${({ theme }) => theme.palette.gold};
     }
@@ -70,7 +70,7 @@ export const Burger = styled.div`
 
 export const Drawer = styled.div`
   ${({ open }) => `
-    max-height: ${open ? '200px' : '0'};
+    max-height: ${open ? '250px' : '0'};
   `}
   overflow: hidden;
   transition: max-height 0.3s ease-in-out;
@@ -81,6 +81,10 @@ export const Drawer = styled.div`
 
   > * {
     margin-top: 20px;
+  }
+
+  > :last-child {
+    margin-bottom: 20px;
   }
 `;
 
@@ -129,6 +133,15 @@ export const Hero = ({ scrollTo }) => {
               <a href="mailto:info@generalbiological.com">
                 <Text type="display-h2">Contact Us</Text>
               </a>
+              <a
+                href="https://general-biological.breezy.hr/preview"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Text type="display-h2" color="gold">
+                  Careers
+                </Text>
+              </a>
             </NavButtons>
           ) : (
             <Burger
@@ -162,13 +175,22 @@ export const Hero = ({ scrollTo }) => {
             <a href="mailto:info@generalbiological.com">
               <Text type="display-h2">Contact Us</Text>
             </a>
+            <a
+              href="https://general-biological.breezy.hr/preview"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Text type="display-h2" color="gold">
+                Careers
+              </Text>
+            </a>
           </Drawer>
         )}
         <Body>
           <Icons.logoWords />
           <Text type="display-h2" weight={500}>
-            Reimagining the chemical and material economy to secure our industry,
-            our country, and our planet.
+            Reimagining the chemical and material economy to secure our
+            industry, our country, and our planet.
           </Text>
         </Body>
       </Content>

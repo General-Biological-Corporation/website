@@ -78,6 +78,15 @@ export const Footer = ({ scrollTo }) => {
           <a href="mailto:info@generalbiological.com">
             <Text type="display-h4">Contact Us</Text>
           </a>
+          <a
+            href="https://general-biological.breezy.hr/preview"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Text type="display-h4" color="gold">
+              Careers
+            </Text>
+          </a>
         </Nav>
       </Content>
     </Container>
