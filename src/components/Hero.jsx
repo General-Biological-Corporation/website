@@ -29,8 +29,8 @@ const Navbar = styled(Row)`
   justify-content: space-between;
 
   > :first-child {
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 70px;
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
@@ -43,13 +43,13 @@ const Navbar = styled(Row)`
 
 const NavButtons = styled(Row)`
   > :not(:last-child) {
-    margin-right: 40px;
+    margin-right: 48px;
   }
 
   > * {
     cursor: pointer;
     transition: color 0.2s ease-in-out;
-    filter: brightness(1.15);
+    filter: brightness(1.2);
     &:hover {
       color: ${({ theme }) => theme.palette.gold};
     }
@@ -124,21 +124,21 @@ export const Hero = ({ scrollTo }) => {
           <Icons.logo />
           {!isMobile ? (
             <NavButtons>
-              <Text type="display-h2" onClick={() => scrollTo('about')}>
+              <Text type="mono-h3" onClick={() => scrollTo('about')}>
                 About
               </Text>
-              <Text type="display-h2" onClick={() => scrollTo('technology')}>
+              <Text type="mono-h3" onClick={() => scrollTo('technology')}>
                 Technology
               </Text>
               <a href="mailto:info@generalbiological.com">
-                <Text type="display-h2">Contact Us</Text>
+                <Text type="mono-h3">Contact Us</Text>
               </a>
               <a
                 href="https://general-biological.breezy.hr/preview"
                 target="_blank"
                 rel="noreferrer"
               >
-                <Text type="display-h2" color="gold">
+                <Text type="mono-h3" color="gold">
                   Careers
                 </Text>
               </a>
@@ -155,7 +155,7 @@ export const Hero = ({ scrollTo }) => {
         {isMobile && (
           <Drawer open={drawerOpen}>
             <Text
-              type="display-h2"
+              type="mono-h3"
               onClick={() => {
                 scrollTo('about');
                 setDrawerOpen(false);
@@ -164,7 +164,7 @@ export const Hero = ({ scrollTo }) => {
               About
             </Text>
             <Text
-              type="display-h2"
+              type="mono-h3"
               onClick={() => {
                 scrollTo('technology');
                 setDrawerOpen(false);
@@ -173,14 +173,14 @@ export const Hero = ({ scrollTo }) => {
               Technology
             </Text>
             <a href="mailto:info@generalbiological.com">
-              <Text type="display-h2">Contact Us</Text>
+              <Text type="mono-h3">Contact Us</Text>
             </a>
             <a
               href="https://general-biological.breezy.hr/preview"
               target="_blank"
               rel="noreferrer"
             >
-              <Text type="display-h2" color="gold">
+              <Text type="mono-h3" color="gold">
                 Careers
               </Text>
             </a>
@@ -188,7 +188,7 @@ export const Hero = ({ scrollTo }) => {
         )}
         <Body>
           <Icons.logoWords />
-          <Text type="display-h2" weight={500}>
+          <Text type="mono-t2" weight={500}>
             Reimagining the chemical and material economy to secure our
             industry, our country, and our planet.
           </Text>

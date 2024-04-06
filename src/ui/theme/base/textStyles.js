@@ -1,41 +1,52 @@
 export const Font = {
   Monospace: 'Oxanium, sans-serif',
-  SansSerif: 'IBM Plex Sans, sans-serif',
-  SansSerif2: 'Inria Sans, sans-serif'
+  SansSerif: 'Poppins, sans-serif'
 };
 
 export const textStyles = {
   desktop: {
-    'display-h1': `700 50px ${Font.Monospace}`,
-    'display-h2': `600 30px ${Font.Monospace}`,
-    'display-h3': `700 28px ${Font.Monospace}`,
-    'display-h4': `600 24px ${Font.Monospace}`,
-    'text-t1': `400 30px ${Font.SansSerif}`,
-    'text-t2': `400 20px ${Font.SansSerif}`,
-    'text-t3': `400 20px ${Font.SansSerif}`,
-    'industry-t1': `400 35px ${Font.SansSerif2}`,
-    'industry-t2': `400 25px ${Font.SansSerif2}`
+    'mono-h1': `600 40px ${Font.Monospace}`,
+    'mono-h2': `700 24px ${Font.Monospace}`,
+    'mono-h3': `600 22px ${Font.Monospace}`,
+    'mono-h4': `600 18px ${Font.Monospace}`,
+    'mono-t1': `400 35px ${Font.Monospace}`,
+    'mono-t2': `400 28px ${Font.Monospace}`,
+    'mono-t3': `400 26px ${Font.Monospace}`,
+    'mono-t4': `400 20px ${Font.Monospace}`,
+    'display-h1': `600 46px ${Font.SansSerif}`,
+    'display-h2': `600 34px ${Font.SansSerif}`,
+    'display-h3': `600 24px ${Font.SansSerif}`,
+    'display-h4': `500 20px ${Font.SansSerif}`,
+    'text-t1': `400 18px ${Font.SansSerif}`
   },
   tablet: {
-    'display-h1': `700 50px ${Font.Monospace}`,
-    'display-h2': `600 30px ${Font.Monospace}`,
-    'display-h3': `700 20px ${Font.Monospace}`,
-    'display-h4': `600 24px ${Font.Monospace}`,
-    'text-t1': `400 30px ${Font.SansSerif}`,
-    'text-t2': `400 16px ${Font.SansSerif}`,
-    'text-t3': `400 16px ${Font.SansSerif}`,
-    'industry-t1': `400 35px ${Font.SansSerif2}`,
-    'industry-t2': `400 25px ${Font.SansSerif2}`
+    'mono-h1': `600 40px ${Font.Monospace}`,
+    'mono-h2': `700 24px ${Font.Monospace}`,
+    'mono-h3': `600 22px ${Font.Monospace}`,
+    'mono-h4': `600 18px ${Font.Monospace}`,
+    'mono-t1': `400 35px ${Font.Monospace}`,
+    'mono-t2': `400 28px ${Font.Monospace}`,
+    'mono-t3': `400 26px ${Font.Monospace}`,
+    'mono-t4': `400 20px ${Font.Monospace}`,
+    'display-h1': `600 40px ${Font.SansSerif}`,
+    'display-h2': `600 30px ${Font.SansSerif}`,
+    'display-h3': `600 24px ${Font.SansSerif}`,
+    'display-h4': `500 20px ${Font.SansSerif}`,
+    'text-t1': `400 16px ${Font.SansSerif}`
   },
   mobile: {
-    'display-h1': `700 32px ${Font.Monospace}`,
-    'display-h2': `600 30px ${Font.Monospace}`,
-    'display-h3': `700 28px ${Font.Monospace}`,
-    'display-h4': `600 24px ${Font.Monospace}`,
-    'text-t1': `400 24px ${Font.SansSerif}`,
-    'text-t2': `400 20px ${Font.SansSerif}`,
-    'text-t3': `400 16px ${Font.SansSerif}`,
-    'industry-t1': `400 35px ${Font.SansSerif2}`,
-    'industry-t2': `400 25px ${Font.SansSerif2}`
+    'mono-h1': `600 40px ${Font.Monospace}`,
+    'mono-h2': `700 24px ${Font.Monospace}`,
+    'mono-h3': `600 22px ${Font.Monospace}`,
+    'mono-h4': `600 18px ${Font.Monospace}`,
+    'mono-t1': `400 35px ${Font.Monospace}`,
+    'mono-t2': `400 24px ${Font.Monospace}`,
+    'mono-t3': `400 20px ${Font.Monospace}`,
+    'mono-t4': `400 20px ${Font.Monospace}`,
+    'display-h1': `600 32px ${Font.SansSerif}`,
+    'display-h2': `600 28px ${Font.SansSerif}`,
+    'display-h3': `600 20px ${Font.SansSerif}`,
+    'display-h4': `500 20px ${Font.SansSerif}`,
+    'text-t1': `400 16px ${Font.SansSerif}`
   }
 };

@@ -63,27 +63,27 @@ export const Footer = ({ scrollTo }) => {
       <Content>
         <Branding>
           <Icons.logoCombined />
-          <Text type="text-t3">General Biological Corporation 2023</Text>
+          <Text type="text-t1">General Biological Corporation 2023</Text>
         </Branding>
         <Nav>
-          <Text type="display-h2" weight={700}>
+          <Text type="mono-h2" weight={700}>
             Navigate
           </Text>
-          <Text type="display-h4" onClick={() => scrollTo('about')}>
+          <Text type="mono-h4" onClick={() => scrollTo('about')}>
             About
           </Text>
-          <Text type="display-h4" onClick={() => scrollTo('technology')}>
+          <Text type="mono-h4" onClick={() => scrollTo('technology')}>
             Technology
           </Text>
           <a href="mailto:info@generalbiological.com">
-            <Text type="display-h4">Contact Us</Text>
+            <Text type="mono-h4">Contact Us</Text>
           </a>
           <a
             href="https://general-biological.breezy.hr/preview"
             target="_blank"
             rel="noreferrer"
           >
-            <Text type="display-h4" color="gold">
+            <Text type="mono-h4" color="gold">
               Careers
             </Text>
           </a>

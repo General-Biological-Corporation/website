@@ -22,7 +22,7 @@ export const SectionContainer = styled.div`
 export const SectionContent = styled.div`
   margin: auto;
   width: 100%;
-  max-width: 1144px;
+  max-width: 1244px;
   padding-left: 50px;
   padding-right: 50px;
 

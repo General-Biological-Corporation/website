@@ -5,6 +5,7 @@ export const palette = {
   lightGold: '#FFC27A',
   gold: '#FF9315',
   brown: '#46423D',
+  browner: '#413327',
   lightGrey: '#d9d9d9',
   darkGrey: '#8e8e8e'
 };

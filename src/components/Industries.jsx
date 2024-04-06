@@ -27,10 +27,13 @@ const data = [
 ];
 
 const Container = styled(SectionContainer)`
-  padding: 120px 0;
+  padding: 120px 0 150px 0;
   // linear gradient from left to right
-  background: ${({ theme }) =>
-    `linear-gradient(90deg, ${theme.palette.lightGrey}, ${theme.palette.darkGrey})`};
+  background: linear-gradient(
+    99.78deg,
+    rgba(0, 0, 0, 0) 13%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     padding: 50px 0;
@@ -40,7 +43,7 @@ const Container = styled(SectionContainer)`
 const Content = styled(SectionContent)`
   > ${Text} {
     color: ${({ theme }) => theme.palette.black};
-    margin-bottom: 35px;
+    margin-bottom: 48px;
   }
 `;
 
@@ -99,10 +102,10 @@ export const Industry = ({ photo, index, title }) => {
   return (
     <Tile>
       <img src={photo} width="100%" height="auto" alt={title} />
-      <Text type="industry-t1" className="number" color="orange">
+      <Text type="mono-t1" className="number">
         {`0${index + 1}`}
       </Text>
-      <Text type="industry-t2" className="title">
+      <Text type="mono-t4" className="title">
         {title}
       </Text>
     </Tile>
